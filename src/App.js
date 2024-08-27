@@ -9,6 +9,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import { Details } from './UI/details/details';
 import { SignUp } from './UI/signup/signup';
 import { Users } from './UI/users/users';
+import { Movies } from './UI/movies/movies';
 function App() {
   return (
     <div>
@@ -22,7 +23,7 @@ function App() {
           <li className='nav'><Link to='register'>Register</Link></li>
           <li className='nav'><Link to='signup'>SignUp</Link></li>
           <li className='nav'><Link to='users'>Users</Link></li>
-          
+          <li className='nav'><Link to='movies'>Movies</Link></li>
         </ul>
       </div>
       <div>
@@ -36,6 +37,7 @@ function App() {
           <Route path='register' element={<Register/>}></Route>
           <Route path='signup' element={<SignUp/>}></Route>
           <Route path='users' element={<Users/>}></Route>
+          <Route path='movies' element={<Movies/>}></Route>
         </Routes>
       </div>
     </div>
