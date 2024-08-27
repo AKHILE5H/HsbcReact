@@ -8,6 +8,7 @@ import { Register } from './UI/register/register';
 import { Link, Route, Routes } from 'react-router-dom';
 import { Details } from './UI/details/details';
 import { SignUp } from './UI/signup/signup';
+import { Users } from './UI/users/users';
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
           <li className='nav'><Link to='login'>Login</Link></li>
           <li className='nav'><Link to='register'>Register</Link></li>
           <li className='nav'><Link to='signup'>SignUp</Link></li>
+          <li className='nav'><Link to='users'>Users</Link></li>
           
         </ul>
       </div>
@@ -33,6 +35,7 @@ function App() {
           <Route path='login' element={<Login/>}></Route>
           <Route path='register' element={<Register/>}></Route>
           <Route path='signup' element={<SignUp/>}></Route>
+          <Route path='users' element={<Users/>}></Route>
         </Routes>
       </div>
     </div>

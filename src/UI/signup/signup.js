@@ -8,11 +8,14 @@ export function SignUp(){
         setUser({...user,[e.target.name]:e.target.value});
     }
 
+    function save() {
+        alert( JSON.stringify(user));
+    }
+
     return(
         <div>
             <h3>
                 Sign Up
-                {JSON.stringify(user)}
             </h3>
             <div>
                 <label htmlFor="">Full name</label>
@@ -24,7 +27,7 @@ export function SignUp(){
             </div>
 
             <div>
-                <button>Next</button>
+                <button onClick={save}>Next</button>
             </div> 
         </div>
     )
